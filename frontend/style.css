@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ЛОГИН */
+#loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1a1a2e;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    width: 350px;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #e94560;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #c73652;
+}
+
+/* LAYOUT */
+#mainPage {
+    display: flex;
+    height: 100vh;
+}
+
+/* САЙДБАР */
+.sidebar {
+    width: 220px;
+    background: #1a1a2e;
+    color: white;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.sidebar nav a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.sidebar nav a:hover {
+    background: #e94560;
+    color: white;
+}
+
+/* КОНТЕНТ */
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.section h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ФОРМЫ */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form input, form select, form textarea {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form textarea {
+    width: 100%;
+    height: 80px;
+    resize: vertical;
+}
+
+form button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+form button[type="submit"] {
+    background: #e94560;
+    color: white;
+}
+
+form button[type="button"] {
+    background: #ddd;
+    color: #333;
+}
+
+/* ФИЛЬТРЫ */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.filters input, .filters select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* ТАБЛИЦА */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background: #1a1a2e;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f9f9f9;
+}
+
+/* КНОПКИ В ТАБЛИЦЕ */
+.btn-edit {
+    background: #f39c12;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn-delete {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ПОСТЕР */
+.poster-thumb {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* ОШИБКА */
+.error {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 5px;
+}

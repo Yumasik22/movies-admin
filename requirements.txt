@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+python-multipart
+pillow
+passlib
+bcrypt==4.0.1
+aiofiles
